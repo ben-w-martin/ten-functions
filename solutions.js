@@ -21,3 +21,38 @@
  * concat
  */
 
+let input;
+const isTrue = (input) => {
+    if (input === true) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+const isFalse = (input) => {
+    if (input === false) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isFalse(null));
+console.log(null === false);
+
+const not = (input) => !(input);
+
+const addOne = (input) => parseFloat(input) + 1;
+
+const isEven = (input) => (parseFloat(input) % 2 === 0);
+
+const isIdentical = (x, y) => x === y;
+
+const isEqual = (x, y) => x == y;
+
+const or = (x, y) => x || y;
+
+const and = (x, y) => x && y;
+
+const concat = (x, y) => x.toString() + y.toString();
+console.log(concat(4, 2));
